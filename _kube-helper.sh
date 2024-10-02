@@ -12,7 +12,7 @@ function list_kube_cred_items(){
 
 function get_full_item() {
   local ITEM_ID="$1"
-  op item get ${ITEM_ID} --format json
+  op item get ${ITEM_ID} --reveal --format json
 }
 
 function get_item_field() {
